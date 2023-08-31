@@ -39,9 +39,7 @@ a:hover{
     letter-spacing: 0.2rem;
 }
 
-/*============================================================== HEADER SECTION STYLING ============================================================*/
-
-section{
+section, main{
     width: 100%;
     margin-inline: auto;
 }
@@ -51,6 +49,8 @@ article, nav{
     max-width: 1800px;
     margin-inline: auto;
 }
+
+/*============================================================== HEADER SECTION STYLING ============================================================*/
 
 .landing__area{
     color: azure;
@@ -69,7 +69,7 @@ article, nav{
 }
 
 .myRule{
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(26, 25, 25);
 }
 
 .logoimg{
@@ -172,3 +172,40 @@ h1{
     width: 100%;
     background-color: rgb(252, 4, 252);
 }
+
+/*============================================================== SPONSORS SECTION STYLING ============================================================*/
+
+.main__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.main__body p{
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.big__sponsor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.small__sponsors{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-inline: auto;
+    width: 100%;
+    /*gap: 1rem;*/
+    object-fit: contain;
+}
+
+.small__sponsors a{
+    border-right: 1px solid black;
+}
+
+/*============================================================== SPONSORS SECTION STYLING ============================================================*/

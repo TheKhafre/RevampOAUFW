@@ -293,4 +293,44 @@ h2 {
 }
 
 
-/*============================================================== GALLERY SECTION STYLING ============================================================*/
+/*============================================================== PARTNER SECTION STYLING ============================================================*/
+
+.my__partner{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.my__partner div{
+    padding: 0 1rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    white-space: nowrap;
+    align-content: center;
+}
+
+.my__partner button{
+    background-color: transparent;
+    white-space: nowrap;
+    height: fit-content;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    border-radius: .7rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    background-color: orangered;
+    font-weight: 700;
+}
+
+.my__partner button a{
+    color: aliceblue;
+}
+
+.my__partner button a:hover{
+    letter-spacing: 0;
+}

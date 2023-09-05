@@ -72,33 +72,42 @@ nav {
 .myNav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-left: 1px solid rgb(0, 0, 0);
     border-right: 1px solid rgb(0, 0, 0);
 }
 
 .logoimg {
-    width: 10%;
+    width: 8rem;
+}
+
+.myNav ul li a{
+    font-size: clamp(.7rem, 1.2vw, 1.2rem);
 }
 
 .nav-element {
     display: flex;
     align-items: center;
-    gap: 1.5vw;
+    gap: 1vw;
 }
 
 .smallNav {
     height: 100%;
     display: flex;
     align-items: center;
-    border-left: 1px solid black;
-    padding-left: 1rem;
+}
+
+p .smallNav:hover {
+    letter-spacing: 0;
 }
 
 .desn {
+    height: fit-content;
     background-color: orangered;
-    padding: 0.6rem 1.4rem;
+    padding: 0.6rem 2%;
     white-space: nowrap;
     font-weight: bold;
+    width: fit-content;
 }
 
 /*============================================================== LANDING PAGE STYLING ============================================================*/
@@ -113,7 +122,7 @@ nav {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 5vw;
     line-height: 1;
 }
 
@@ -121,6 +130,7 @@ h1 {
     padding-top: 0.2rem;
     font-size: 1rem;
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .landing__CTA {
@@ -144,7 +154,7 @@ h1 {
 }
 
 .small__CTA a {
-    font-size: 1.5rem;
+    font-size: 2vw;
     padding: 1rem;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -166,7 +176,7 @@ h1 {
 .socials {
     padding: 0.7rem;
     display: flex;
-    width: clamp(2rem, 3rem, 5rem);
+    width: clamp(2.3vw, 4vw, 5rem);
 }
 
 .mySocials a:hover {
@@ -280,6 +290,10 @@ h2 {
     width: 85%;
 }
 
+.ladies img:hover{
+    transform: scale(1);
+}
+
 .gallery__big{
     padding: 1rem;
 }
@@ -292,12 +306,17 @@ h2 {
     max-width: 600px;
 }
 
+.subsection li a{
+    font-size: clamp(.6rem, 1.2vw, 1.2rem);
+}
+
 
 /*============================================================== PARTNER SECTION STYLING ============================================================*/
 
 .my__partner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -333,4 +352,47 @@ h3{
 
 .my__partner button a:hover{
     letter-spacing: 0;
+}
+
+.my__partner p{
+    padding-right: 1rem;
+}
+
+/*============================================================== FOOTER SECTION STYLING ============================================================*/
+
+footer{
+    color: azure;
+    background-color: rgb(54, 54, 54);
+}
+footer article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.social__wrap, .social__foot, .foot__cont, .footmap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footmap{
+    flex-direction: column;
+}
+
+.main__foot{
+    padding: 2rem;
+}
+
+.social__wrap img {
+    padding: 0.5rem;
+    display: flex;
+    width: clamp(1.5vw, 4vw, 5rem);
+}
+
+.social__wrap{
+    align-items: flex-end;
+}
+
+.social__foot{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
 }

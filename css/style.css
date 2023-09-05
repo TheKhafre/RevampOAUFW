@@ -368,7 +368,7 @@ footer article{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.social__wrap, .social__foot, .foot__cont, .footmap{
+.social__wrap, .social__foot, .foot__cont{
     display: flex;
     justify-content: space-between;
 }
@@ -384,7 +384,7 @@ footer article{
 .social__wrap img {
     padding: 0.5rem;
     display: flex;
-    width: clamp(1.5vw, 4vw, 5rem);
+    width: clamp(1.5vw, 2.5vw, 5rem);
 }
 
 .social__wrap{
@@ -395,4 +395,80 @@ footer article{
     padding-bottom: 1rem;
     border-bottom: 1px solid white;
     justify-content: space-between;
+}
+
+.copyright{
+    background-color: rgb(95, 93, 93);
+    text-align: center;
+    padding: .7rem;
+    color: white;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.foot__cont span{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.foot__cont p{
+    margin-bottom: 1rem;
+}
+
+.foot__cont{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid white;
+}
+
+.footmap{
+    display: flex;
+    gap: 1rem;
+}
+.footmap a{
+    color: white;
+    font-weight: 600;
+}
+
+.team{
+    border: 1px solid orangered;
+    padding: .6rem;
+    color: white;
+    font-weight: 600;
+}
+
+.footmap a button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    padding: .6rem 1.6rem;
+    cursor: pointer;
+}
+
+/******************* FEEDBACK FORM **********************/
+
+.feedback{
+    border: 1px solid grey;
+    width: 80%;
+    height: fit-content;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.feedback a button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    padding: .6rem 1.6rem;
+    cursor: pointer;
+    display: block;
+}
+
+.feedback input{
+    width: 92%;
+    background-color: grey;
+    color: white;
+    padding: 1rem;
+    margin-bottom: .4rem;
 }

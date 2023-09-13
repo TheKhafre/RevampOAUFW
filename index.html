@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <div class="progress__wrapper">
+        <div class="progress__bar"></div>
+    </div>
     <!--======================================================= HERO SECTION =========================================================-->
     <header>
         <section class="landing__area">
@@ -80,9 +83,9 @@
                 <div class="gloria">
                     <div class="container">
                         <img src="images/gloria.JPG" alt="Model Gloria rocking a Moray outfit on the runway">
-                        <img src="images/dotun__editorial.jpg" alt="Model Gloria rocking a Moray outfit on the runway">
-                        <img src="images/Sarah__editorial.jpg" alt="Model Gloria rocking a Moray outfit on the runway">
-                        <img src="images/reggie__landing.jpg" alt="Model Gloria rocking a Moray outfit on the runway">
+                        <img src="images/dotun__editorial.jpg" alt="Model Dotun editorial shoot for Zurad clothing">
+                        <img src="images/Sarah__editorial.jpg" alt="Model Sarah editorial shoot for moray collection">
+                        <img src="images/reggie__landing.jpg" alt="Model Rejoice for the event campaign shoot">
                     </div>
                 </div>
             </article>
@@ -223,6 +226,21 @@
         </article>
     </footer>
     <p class="copyright">copyright &copy 2023. OAU Fashion Week</p>
+
+    <script>
+        const body = document.body;
+        const progressBar = document.querySelector('.progress__bar');
+        console.log(progressBar)
+        const updateProgress = () => {
+            let scrollPos =
+                (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+            console.log(scrollPos)
+            progressBar.style.width = `${scrollPos}%`;
+            requestAnimationFrame(updateProgress);
+        };
+
+        updateProgress()
+    </script>
 </body>
 
 </html>

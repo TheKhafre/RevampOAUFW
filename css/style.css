@@ -9,6 +9,7 @@ html {
 	--primary-blue: #b505eb;
 	--secondary-blue: #4bd7e3;
 	--text-color: #4d5b7c;
+    --bkg-col: rgb(51, 47, 68);
 }
 
 * {
@@ -19,6 +20,11 @@ html {
     border: 0;
     appearance: 0;
     list-style: none;
+}
+
+@font-face{
+    src: url(/Montserrat-VariableFont_wght.ttf);
+    font-family: "Montserrat";
 }
 
 body {
@@ -94,7 +100,7 @@ nav {
 
 .landing__area {
     color: azure;
-    background-color: rgb(54, 54, 54);
+    background-color: var(--bkg-col);
 }
 
 .landing__area a {
@@ -440,7 +446,7 @@ h3{
 
 footer{
     color: azure;
-    background-color: rgb(54, 54, 54);
+    background-color: var(--bkg-col);
 }
 footer article{
     display: grid;

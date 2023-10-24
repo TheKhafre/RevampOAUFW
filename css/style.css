@@ -142,9 +142,10 @@ p .smallNav:hover {
 .desn {
     height: fit-content;
     background-color: orangered;
-    padding: 0.6rem 2%;
+    padding: 0.6rem 1%;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: 500;
+    text-align: center;
     width: fit-content;
 }
 
@@ -197,49 +198,6 @@ h1 {
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.gloria {
-    overflow: hidden;
-
-}
-
-.gloria img {
-    height: 100%;
-}
-
-.container {
-    display: flex;
-    height: 100%;
-    animation: slide 10s infinite;
-    width: 100%;
-}
-
-/* @keyframes slide{
-    0%{
-        transform: translateX(0%);
-    }
-    25%{
-        transform: translateX(0%);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-} */
-
 .mySocials {
     display: flex;
     align-items: center;
@@ -253,7 +211,7 @@ h1 {
 .socials {
     padding: 0.7rem;
     display: flex;
-    width: clamp(2.3vw, 4vw, 5rem);
+    width: clamp(2.3vw, 3.15vw, 5rem);
 }
 
 .mySocials a:hover {
@@ -262,30 +220,26 @@ h1 {
     background-color: rgb(182, 4, 252);
 }
 
-/*============================================================== LANDING PAGE TEST ============================================================*/
+/*============================================================== LANDING PAGE IMAGE-HOVER ============================================================*/
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 8px;
     max-width: 800px;
+    height: 100%;
 }
 
 .card {
     position: relative;
     left: 0px;
     width: 80px;
-    border-radius: 16px;
-    height: 100;
-    overflow: hidden;
-    background-color: var(--background);
     transition: 0.4s ease-in-out;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
-    flex: 0.25;
+    flex: 0.5;
 }
 
 .card img {
-    height: 360px;
+    height: 100%;
 }
 
 .card:hover {

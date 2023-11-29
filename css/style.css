@@ -509,6 +509,9 @@ footer article {
 }
 
 .foot__cont {
+    display: flex;
+    justify-content: flex-start;
+    gap: 11vw;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 1.5rem;
@@ -526,7 +529,7 @@ footer article {
 }
 
 .team {
-    border: 1px solid white;
+    border: 1px solid orangered;
     padding: .6rem;
     color: white;
     font-weight: 600;
@@ -577,7 +580,7 @@ footer article {
   }
   
   details[open] .faq-title {
-    color: orangered;
+    color: rgba(255, 68, 0, 0.699);
   }
   
   summary {
@@ -593,12 +596,12 @@ footer article {
   
 
   details[open] summary svg {
-    stroke: orangered;
+    stroke: rgba(255, 68, 0, 0.705);
     transform: rotate(90deg);
   }
   
   summary:hover .faq-title {
-    color: orangered;
+    color: rgba(255, 68, 0, 0.671);
   }
   
   summary::-webkit-details-marker {

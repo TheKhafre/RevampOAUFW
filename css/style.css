@@ -32,6 +32,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     font-size: 0.9rem;
+    min-height: 100vh;
 }
 
 img {
@@ -95,7 +96,6 @@ nav {
 }
 
 /*============================================================== HEADER SECTION STYLING ============================================================*/
-
 .landing__area {
     color: azure;
     background-color: var(--bkg-col);
@@ -147,6 +147,13 @@ p .smallNav:hover {
     font-weight: 500;
     text-align: center;
     width: fit-content;
+}
+
+#menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
 }
 
 /*============================================================== LANDING PAGE STYLING ============================================================*/
@@ -626,6 +633,55 @@ summary:focus {
 
 /*============================================================== MEDIA QUERIES STYLING ============================================================*/
 
+/*MENU SECTION STYLING*/
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.main a{
+    margin-right: 25px;
+}
+
+#menu-icon {
+    display: block;
+}
+
+.nav-element{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    background: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+}
+
+.nav-element {
+    display: block;
+    margin: 12px 0px;
+    padding: 0px 25px;
+    transition: all .50s ease;
+}
+
+.nav-element a:hover{
+    color: #b505eb;
+    transform: translate(5px);
+}
+
+.nav-element a:active{
+    color: #4bd7e3;
+}
+
+.nav-element.open{
+    right: 2%;
+}
+
+/*================================================================*/
 @media screen and (max-width: 912px) {
     footer article {
         display: grid;

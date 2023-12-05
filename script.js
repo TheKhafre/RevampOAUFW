@@ -119,3 +119,13 @@ class Accordion {
   document.querySelectorAll("details").forEach((el) => {
     new Accordion(el);
   });
+
+/*   Javascript for opening and closing the mobile view menu */
+
+let menu = document.querySelector('#menu-icon');
+let navelement = document.querySelector('.nav-element');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navelement.classList.toggle('open');
+}

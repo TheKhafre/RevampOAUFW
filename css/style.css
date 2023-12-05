@@ -122,7 +122,7 @@ nav {
     font-size: clamp(.7rem, 1.2vw, 1.2rem);
 }
 
-.nav-element {
+.navbar {
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -633,56 +633,66 @@ summary:focus {
 
 /*============================================================== MEDIA QUERIES STYLING ============================================================*/
 
-/*MENU SECTION STYLING*/
-.main{
-    display: flex;
-    align-items: center;
-}
-
-.main a{
-    margin-right: 25px;
-}
-
-#menu-icon {
-    display: block;
-}
-
-.nav-element{
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 270px;
-    height: 29vh;
-    background: #2c2c2c;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 10px;
-    transition: all .50s ease;
-}
-
-.nav-element {
-    display: block;
-    margin: 12px 0px;
-    padding: 0px 25px;
-    transition: all .50s ease;
-}
-
-.nav-element a:hover{
-    color: #b505eb;
-    transform: translate(5px);
-}
-
-.nav-element a:active{
-    color: #4bd7e3;
-}
-
-.nav-element.open{
-    right: 2%;
-}
-
 /*================================================================*/
 @media screen and (max-width: 912px) {
+
+    /*MENU SECTION STYLING*/
+
+    header {
+        align-items: center;
+        vertical-align: center;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+    }
+
+    .main a {
+        margin-right: 25px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        border: 1px solid white;
+        top: 100%;
+        right: -100%;
+        width: fit-content;
+        height: fit-content;
+        background: var(--bkg-col);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        margin: 16px;
+        padding: 28px;
+    }
+
+    .navbar a {
+        margin: 12px 0px;
+        padding: 8px;
+        transition: all .50s ease;
+        font-size: 1.3vw;
+    }
+
+    .navbar a:hover {
+        color: #b505eb;
+        transform: translate(2px);
+    }
+
+    .navbar a:active {
+        color: #4bd7e3;
+    }
+
+    .navbar.open {
+        right: 2%;
+        top: 0;
+    }
+
     footer article {
         display: grid;
         grid-template-columns: 1fr;
@@ -843,8 +853,9 @@ summary:focus {
     .social__wrap,
     .social__foot,
     .foot__cont {
-/*         display: grid;
- */        justify-content: space-between;
+        /*         display: grid;
+ */
+        justify-content: space-between;
     }
 
 

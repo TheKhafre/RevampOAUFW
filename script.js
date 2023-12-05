@@ -123,9 +123,9 @@ class Accordion {
 /*   Javascript for opening and closing the mobile view menu */
 
 let menu = document.querySelector('#menu-icon');
-let navelement = document.querySelector('.nav-element');
+let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
   menu.classList.toggle('bx-x');
-  navelement.classList.toggle('open');
+  navbar.classList.toggle('open');
 }

@@ -714,6 +714,7 @@ summary:focus {
     .landing-area {
         display: grid;
         grid-template-columns: 1fr;
+        height: auto;
     }
 
     .body__text {
@@ -739,6 +740,10 @@ summary:focus {
         margin-bottom: 1rem;
         padding: 1.5rem;
         border-bottom: 1px solid white;
+    }
+
+    .main__foot, .faq-container {
+        padding: 1rem;
     }
 
     .mySocials{
@@ -872,11 +877,6 @@ summary:focus {
         /*         display: grid;
  */
         justify-content: space-between;
-    }
-
-
-    .main__foot {
-        padding: 2rem;
     }
 
     .social__wrap img {

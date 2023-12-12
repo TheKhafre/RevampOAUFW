@@ -660,15 +660,13 @@ summary:focus {
         position: absolute;
         border: 1px solid white;
         top: 100%;
-        right: -100%;
-        width: fit-content;
-        height: fit-content;
+        right: 100%;
         background: var(--bkg-col);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         border-radius: 10px;
-        margin: 16px;
+        /* margin: 16px; */
         padding: 28px;
     }
 

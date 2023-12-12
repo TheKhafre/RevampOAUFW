@@ -156,6 +156,10 @@ p .smallNav:hover {
     display: none;
 }
 
+.contact {
+    display: none;
+}
+
 /*============================================================== LANDING PAGE STYLING ============================================================*/
 
 .landing-area {
@@ -675,6 +679,11 @@ summary:focus {
         width: 100%;
     }
 
+    .contact{
+        font-size: 3vw;
+        display: block;
+    }
+
     .navbar a {
         margin: 12px 0px;
         padding: 8px;
@@ -730,6 +739,10 @@ summary:focus {
         margin-bottom: 1rem;
         padding: 1.5rem;
         border-bottom: 1px solid white;
+    }
+
+    .mySocials{
+        display: none;
     }
 }
 

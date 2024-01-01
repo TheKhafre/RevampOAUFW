@@ -336,10 +336,12 @@ a.aktiv {
 
 .small__sponsors {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     margin-inline: auto;
     width: 100%;
     object-fit: 100%;
+    place-content: center;
+    place-items: center;
 }
 
 .small__sponsors a {
@@ -530,7 +532,8 @@ footer article {
 .social__wrap img {
     padding: 0.5rem;
     display: flex;
-    width: clamp(1.5vw, 2.5vw, 5rem);
+    justify-content: space-between;
+    width: auto;
 }
 
 .social__wrap a:hover {

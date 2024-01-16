@@ -337,7 +337,7 @@ a.aktiv {
 
 .small__sponsors {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     margin-inline: auto;
     width: 100%;
     object-fit: 100%;
@@ -351,20 +351,23 @@ a.aktiv {
 }
 
 /*============================================================== PARTNERS STYLING ============================================================*/
-
-.my_part a {
-    border-right: 1px solid black;
+.partner_sponsor a {
+    border-right: none;
+    max-width: 200px;
 }
 
-.my_part {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.partner_sponsor {
     margin-inline: auto;
-    width: 100%;
-    /*gap: 1rem;*/
-    object-fit: contain;
+    grid-template-columns: repeat(3, 1fr);
 }
 
+.partner-sp {
+    text-align: center;
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 1rem;
+}
 /*============================================================== GALLERY SECTION STYLING ============================================================*/
 
 .main__gallery {
